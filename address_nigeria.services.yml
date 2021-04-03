@@ -1,0 +1,5 @@
+services:
+  address_nigeria.address_nigeria_subscriber:
+    class: Drupal\address_nigeria\EventSubscriber\AddressNigeriaEventSubscriber
+    tags:
+      - { name: event_subscriber }

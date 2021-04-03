@@ -1,0 +1,8 @@
+name: 'Address Nigeria'
+type: module
+description: 'Extends the Address module with Nigeria-specific administrative subdivision data.'
+package: 'Field types'
+core: 8.x
+dependencies:
+  - drupal:address
+core_version_requirement: '^8 || ^9'

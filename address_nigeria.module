@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ * Contains hook implementations for the Address Nigeria module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function address_nigeria_theme($existing, $type, $theme, $path) {
+  return [
+    'address_nigeria_plain' => [
+      'variables' => [
+        'given_name' => '',
+        'additional_name' => '',
+        'family_name' => '',
+        'organization' => '',
+        'address_line1' => '',
+        'address_line2' => '',
+        'postal_code' => '',
+        'sorting_code' => '',
+        'dependent_locality' => [],
+        'locality' => [],
+        'administrative_area' => [],
+        'country' => [],
+        'address' => NULL,
+        'view_mode' => '',
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_help().
+ */
+function address_nigeria_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.address_nigeria':
+      return t("Extends the Address module with Nigeria-specific administrative subdivision data: Local Governement Area data.");
+
+    // OPTIONAL: Add additional cases for other paths that should display
+    // help text.
+  }
+}
