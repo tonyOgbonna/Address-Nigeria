@@ -1,7 +1,7 @@
 Address Nigeria
 ===============
 
-Address Nigeria extnds the Address module with the complete Nigeria-specific
+Address Nigeria extends the Address module with the complete Nigeria-specific
 Local Government subdivision data for all states and the Federal Capital
 Territory (Abuja).
 
